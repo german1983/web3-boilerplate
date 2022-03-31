@@ -18,8 +18,12 @@
     "private": true,
     "scripts": {
         "build": "yarn workspace @german-scaffold-eth/app build",
+        "chain": "yarn workspace @german-scaffold-eth/hardhat chain",
+        "contracts:build": "yarn workspace @german-scaffold-eth/hardhat hardhat compile && yarn workspace @german-scaffold-eth/app contracts:external",
+        "deploy": "yarn workspace @german-scaffold-eth/hardhat deploy",
         "generate": "yarn workspace @german-scaffold-eth/hardhat generate",
-        "fundedwallet": "cd packages/hardhat-ts && npx hardhat fundedwallet"
+        "fundedwallet": "cd packages/hardhat-ts && npx hardhat fundedwallet",
+        "start": "yarn workspace @german-scaffold-eth/app start"
     },
     "workspaces": {
         "packages": [

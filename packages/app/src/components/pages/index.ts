@@ -1,0 +1,10 @@
+import { lazier } from 'eth-hooks/helpers';
+
+// the components and pages are lazy loaded for performance and bundle size reasons
+// code is in the component file
+
+export const Greeter = lazier(() => import('./greeter/Greeter'), 'Greeter');
+
+
+export const DebugContracts = lazier(() => import('./contracts/DebugContracts'), 'DebugContracts');
+export const Hints = lazier(() => import('./hints/Hints'), 'Hints');

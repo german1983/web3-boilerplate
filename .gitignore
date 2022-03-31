@@ -10,12 +10,14 @@ packages/hardhat-ts/artifacts*
 packages/hardhat-ts/deployments
 packages/hardhat-ts/generated*
 packages/hardhat-ts/*.txt
+packages/hardhat-ts/mnemonic.secret
 packages/app/src/contracts/*
 !packages/app/src/contracts/external_contracts.js
 packages/hardhat-ts/cache*
 packages/**/data
 !packages/app/src/contracts/contracts.js
 packages/app/src/generated/*
+packages/app/dist/*
 
 # ts
 packages/hardhat-ts/cache
